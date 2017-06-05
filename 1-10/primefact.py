@@ -18,8 +18,7 @@ def factor(n):
     factors = []
 
     for i in range(2, int(sqrt(n) + 1)):
-        if n % i == 0:
-            if prime(i):
+        if n % i == 0 and prime(i):
                 factors.append(i)
 
     return factors
