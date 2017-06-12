@@ -3,11 +3,8 @@ target = 1000
 def abctriplet(target):
 
     a = 1
-    b = 1
-    c = 1
 
     while a < target/3:
-        print(a,b,c)
         a += 1
         for i in range(a):
             b = a + 1
