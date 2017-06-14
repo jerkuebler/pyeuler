@@ -1,3 +1,6 @@
+# Run time less than 5 seconds
+
+
 def sumprime(below):
 
     total = 0
