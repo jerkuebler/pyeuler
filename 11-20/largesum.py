@@ -1,10 +1,10 @@
 def prepnums(numfile):
-    finalgrid = []
+    finalnums = []
 
     with open(numfile, 'r') as nums:
         for item in nums:
             finalgrid.append(int(item))
 
-    return finalgrid
+    return finalnums
 
 print(str(sum(prepnums('largesum.txt')))[:10])
