@@ -37,8 +37,6 @@ def count_em(upto):
     total = 0
 
     for num in range(1, upto + 1):
-        print(num)
-        print(num_let_count(num))
         total += num_let_count(num)
 
     return total
