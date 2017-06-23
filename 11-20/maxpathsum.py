@@ -1,5 +1,4 @@
-# start at the bottom right. Chose which of the two is better for the number above it. Do this for each number in the
-# top set.
+# start at the bottom left. Complete the triangle with the number above. Do this for each number in the top set.
 
 
 def find_path(trifile):
