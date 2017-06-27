@@ -31,7 +31,6 @@ def count_sunday(startyear, endyear):
         return interim % 7
 
     for i in daterange(start, end):
-        print(check_day(i))
         if i.day == 1 and check_day(i) == 0:
             total += 1
 
