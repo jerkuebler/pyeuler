@@ -1,5 +1,5 @@
 # This version works absurdly quickly. Abuses Fermat's Little Theorem. Less about programming knowledge and more knowing
-# the correct formula.
+# the correct formula. Might be better split into ~4 functions?
 
 def prime_sieve(below):
     prime_list = []
