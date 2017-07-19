@@ -25,11 +25,9 @@ def quad_primes(range_width):
 
     for a in range(start_a, end_a):
         for b in range(start_b, end_b):
-            print(b)
             n = 0
             while prime(quad_form(n, a, b)):
                 n += 1
-                print(n)
             answer_dict[n] = (a, b)
 
     max_n = max(x for x in answer_dict)
