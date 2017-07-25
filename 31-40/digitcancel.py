@@ -18,25 +18,27 @@ def check_num(numerator, denominator):
 
 
 def digit_cancels():
-    nums = []
+    cancels_list = []
 
     for i in range(10, 50):
-        for j in range(10, 100):
+        for j in range(50, 100):
             if check_num(i, j):
-                nums.append((i, j))
+                cancels_list.append((i, j))
 
-    return nums
+    return cancels_list
 
 
-def find_product(list_cancels):
+def find_product(cancels_list):
 
     num = 1
     den = 1
-    for item in list_cancels:
+    for item in cancels_list:
         num *= item[0]
         den *= item[1]
 
     return num, den
 
-nums = find_product(digit_cancels())
+cancels_list = digit_cancels()
+print(cancels_list)
+nums = find_product(cancels_list)
 print(nums[0]/nums[1])
