@@ -38,7 +38,7 @@ def find_product(cancels_list):
 
     return num, den
 
-cancels_list = digit_cancels()
-print(cancels_list)
-nums = find_product(cancels_list)
+cancel_list = digit_cancels()
+print(cancel_list)
+nums = find_product(cancel_list)
 print(nums[0]/nums[1])
