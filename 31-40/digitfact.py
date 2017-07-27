@@ -17,8 +17,10 @@ def digit_factorials(num):
 
 
 def check_numbers():
+
+    max_num = math.factorial(9)
     digit_fact_list = []
-    for i in range(3, 362880):
+    for i in range(3, max_num):
         if digit_factorials(i):
             digit_fact_list.append(i)
 
