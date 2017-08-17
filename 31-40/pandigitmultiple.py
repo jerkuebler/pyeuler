@@ -10,12 +10,14 @@ def pandigital_multiple():
         min_num = ("1" * (10 // list_len - 1)) or 1
 
         for i in range(int(min_num), int(max_num)):
+
             factor_list = []
+            factor_str = ""
+            pandigital = "123456789"
+
             for j in range(1, list_len + 1):
                 factor_list.append(i * j)
 
-            factor_str = ""
-            pandigital = "123456789"
             for item in factor_list:
                 factor_str += str(item)
 
