@@ -8,7 +8,6 @@ def pandigital_multiple():
     for list_len in range(2, 20):
         max_num = "9" * (9 // list_len + 1)
         min_num = ("1" * (10 // list_len - 1)) or 1
-        print(min_num, max_num)
 
         for i in range(int(min_num), int(max_num)):
             factor_list = []
@@ -25,7 +24,7 @@ def pandigital_multiple():
             if test_str == pandigital:
                 pandigital_list.append(int(factor_str))
 
-    print(max(pandigital_list))
+    return max(pandigital_list)
 
 
-pandigital_multiple()
+print(pandigital_multiple())
