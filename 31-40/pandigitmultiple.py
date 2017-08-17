@@ -1,6 +1,7 @@
 # Not really sure how to justify the way I'm reducing the values being iterated over.
 # Fast result and gives all the 9-digit pandigitals for series where n > 1.
 
+
 def pandigital_multiple():
     pandigital_list = []
 
