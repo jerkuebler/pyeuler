@@ -4,10 +4,8 @@
 
 def largest_pandigital_prime():
 
-    primes = getprime(7654321)
-
     largest = 0
-    for i in primes:
+    for i in getprime(7654321):
         if pandigital(i, len(str(i))):
             largest = i
 
@@ -27,7 +25,6 @@ def getprime(below):
     max_factor = below ** 0.5
 
     sieve = [True] * below
-    primes = []
 
     for p in range(2, int(max_factor)):
         if sieve[p]:
@@ -36,8 +33,6 @@ def getprime(below):
 
     for i in range(2, len(sieve)):
         if sieve[i]:
-            primes.append(i)
-
-    return primes
+            yield i
 
 print(largest_pandigital_prime())
