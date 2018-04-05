@@ -37,15 +37,13 @@ if __name__ == '__main__':
     current_facts = []
     for i in natural_numbers():
         facts = prime_factors(i)
-        if len(set(facts)) > 3:
+        if len(set(facts)) > 3 and not any(facts) in current_facts:
             chain_length += 1
-            if any(facts) in current_facts:
-                chain_length = 0
-                current_facts = []
-            else:
-                current_facts.extend(facts)
+            current_facts.extend(facts)
         else:
             chain_length = 0
+            current_facts = []
+
         if chain_length == 4:
             print(i - 3)
             break
